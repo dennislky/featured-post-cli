@@ -1,0 +1,38 @@
+{
+  "name": "featured-post-cli",
+  "version": "0.1.0",
+  "description": "CLI for featured posts",
+  "main": "dist/featured-post-updater.js",
+  "scripts": {
+    "watch": "./node_modules/.bin/gulp",
+    "build": "./node_modules/.bin/gulp dist:build",
+    "prepublish": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dennislky/featured-post-cli.git"
+  },
+  "author": "dennislky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dennislky/featured-post-cli/issues"
+  },
+  "homepage": "https://github.com/dennislky/featured-post-cli#readme",
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
+    "babel-preset-es2016": "^6.16.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.2"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.4",
+    "cli": "^1.0.1",
+    "config": "^1.21.0",
+    "ioredis": "^3.1.2",
+    "moment": "^2.18.1",
+    "mongodb": "^2.2.30",
+    "node-fetch": "^1.7.1"
+  }
+}
